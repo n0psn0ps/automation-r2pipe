@@ -2,10 +2,9 @@ import r2pipe
 import time
 
 def open_app_with_r2frida(target_app):
-        bundle_id = target_app
-
+    bundle_id = target_app
 # launch the android application
-r = r2pipe.open(f"frida://launch/usb//com.optiv.ndkcrackme")
+r = r2pipe.open("frida://launch/usb//com.optiv.ndkcrackme")
 
 # search library, split addr, print address
 addr = r.cmd(':dc');
