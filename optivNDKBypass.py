@@ -1,8 +1,6 @@
 import r2pipe
 import time
 
-def open_app_with_r2frida(target_app):
-    bundle_id = target_app
 # launch the android application
 r = r2pipe.open("frida://launch/usb//com.optiv.ndkcrackme")
 
@@ -21,7 +19,3 @@ print("[X] Function bypassed. Any password now accepted.")
 
 # sleep the application
 time.sleep(10000)
-
-if __name__ == "__main__":
-    target_app = "com.optiv.ndkcrackme"  
-    open_app_with_r2frida(target_app)
