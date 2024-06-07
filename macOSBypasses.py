@@ -28,7 +28,6 @@ print("[X] Application Patching kill app function now bypassed.\n")
 # Bypass Piracy Check
 print("[X] Piracy check bypassed.\n")
 out = r.cmd(":ic SFAntiPiracy~[2]")
-print("Data: ", out)
 
 addr = out.split()
 for addrs in addr:
